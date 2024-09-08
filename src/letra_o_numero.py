@@ -1,10 +1,18 @@
 def evaluar(caracter):
-    # TODO: Coloca aquí el código del ejercicio 4: Letra o número
-    return "";
+    if not (caracter.isalpha() or caracter.isdigit()):
+        return "No es letra ni número"
+    
+    if caracter.isdigit():
+        return "Es número"
+    elif caracter.isupper():
+        return "Es letra mayúscula"
+    elif caracter.islower():
+        return "Es letra minúscula"
+    
+    return ""
 
 if __name__ == '__main__':
-    print("Caracter:", end='')
-    caracter = input()
-        
+    caracter = input("Caracter: ")
+    
     respuesta = evaluar(caracter)
     print(respuesta)
