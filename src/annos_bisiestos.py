@@ -1,4 +1,4 @@
-
+def evaluar(anno):
     if anno < 1582:
         if anno % 4 == 0:
             return f"{anno} es un año bisiesto (calendario juliano)"
